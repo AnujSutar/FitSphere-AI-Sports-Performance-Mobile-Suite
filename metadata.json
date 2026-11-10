@@ -1,0 +1,6 @@
+{
+  "name": "FitSphere AI — Sports & Performance Mobile Suite",
+  "description": "Mobile-first sports & performance web app featuring multi-sport scouting, telemetry dashboard, routine logger, athlete marketplace, and accessibility settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

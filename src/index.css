@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+    --font-telemetry: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.font-telemetry {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: 'tnum' on, 'zero' on;
+}
+
+.font-body {
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+/* Custom glow effects from Kinetic Obsidian & Daylight specs */
+.glow-kinetic-green {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.22);
+}
+
+.glow-kinetic-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.22);
+}
+
+.glow-kinetic-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.22);
+}
+
+/* Custom scrollbars for clean mobile feel */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Sidebar Container Focus & Sticky Layout */
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
